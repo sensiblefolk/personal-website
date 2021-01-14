@@ -36,6 +36,7 @@ export const projectsData = [
     info:
       'A Cryptocurrency backed lending platform that enables cryptocurrency holders get quick short term liquidity without having to sell their holdings.',
     info2: '',
+    techStack: ['Angular', 'Firebase'],
     url: 'https://kobolet.com',
     repo: '', // if no repo, the button will not show up
   },
@@ -46,6 +47,17 @@ export const projectsData = [
     info:
       'A social lending platform for family and friends that enforces a contract between a lender and a borrower.',
     info2: '',
+    techStack: [
+      'Javascript/Typescript',
+      'React',
+      'Redux',
+      'Redux',
+      'Graphql',
+      'Apollo',
+      'Node.Js',
+      'Azure',
+      'Firebase',
+    ],
     url: 'https://boromee.app',
     repo: 'https://github.com/sensiblefolk/boromee', // if no repo, the button will not show up
   },
@@ -56,8 +68,40 @@ export const projectsData = [
     info:
       'Novagro provides easy and safe access to profitable and impactful agriculture investment opportunites.',
     info2: '',
+    techStack: [
+      'Javascript/Typescript',
+      'React',
+      'Redux',
+      'Redux',
+      'Graphql',
+      'Apollo',
+      'Node.Js',
+      'Azure',
+      'Firebase',
+    ],
     url: 'https://novagro.farm',
     repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'camfly.png',
+    title: 'Camfly',
+    info:
+      'Camfly is an on demand banner sharing tool that makes it dead simple to create editable banner images on the fly.',
+    info2: '',
+    techStack: [
+      'Javascript/Typescript',
+      'React',
+      'Redux',
+      'Redux',
+      'Graphql',
+      'Apollo',
+      'Node.Js',
+      'Azure',
+      'Firebase',
+    ],
+    url: 'https://cam-fly.web.app',
+    repo: 'https://github.com/sensiblefolk/camfly', // if no repo, the button will not show up
   },
 ];
 

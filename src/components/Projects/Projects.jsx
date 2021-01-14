@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { nanoid } from 'nanoid';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, techStack } = project;
 
             return (
               <Row key={id}>
@@ -48,6 +49,10 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <h3 style={{ fontWeight: '600' }}>Tech Stack:</h3>
+                        <ul>
+                          {techStack && techStack.map((stack) => <li key={nanoid()}>{stack}</li>)}
+                        </ul>
                       </div>
                       <a
                         target="_blank"
